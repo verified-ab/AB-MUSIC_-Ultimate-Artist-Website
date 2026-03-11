@@ -1,21 +1,111 @@
-MIT License
+<!DOCTYPE html>
+<html lang="en">
 
-Copyright (c) 2026 AB MUSIC
+<head>
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+<title>AB MUSIC_ | License & Terms</title>
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+<style>
+
+body{
+font-family:Arial;
+background:#0b0b0b;
+color:white;
+margin:0;
+}
+
+.container{
+max-width:900px;
+margin:auto;
+padding:40px;
+}
+
+h1,h2{
+color:#ffffff;
+}
+
+p{
+line-height:1.6;
+color:#cccccc;
+}
+
+footer{
+text-align:center;
+padding:20px;
+background:#111;
+margin-top:40px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>AB MUSIC_ License & Terms of Use</h1>
+
+<h2>Copyright</h2>
+
+<p>
+Copyright © 2026 AB MUSIC_. All rights reserved.
+</p>
+
+<p>
+All music, audio recordings, lyrics, artwork, images, videos, and written content
+published on this website are the intellectual property of AB MUSIC_ unless
+otherwise stated.
+</p>
+
+<h2>Use of Content</h2>
+
+<p>
+You may stream, share, or link to AB MUSIC_ content for personal and non-commercial use.
+You may not reproduce, sell, distribute, remix, or modify any content without
+written permission from AB MUSIC_.
+</p>
+
+<h2>Music Streaming Platforms</h2>
+
+<p>
+Music embedded on this website may be streamed through official platforms such as
+Spotify, Audiomack, and SoundCloud. All streaming rights and policies follow the
+terms of those respective platforms.
+</p>
+
+<h2>Website Code License</h2>
+
+<p>
+The website structure and code may be licensed under the MIT License unless
+otherwise stated. This allows the code to be reused with proper attribution to
+AB MUSIC_.
+</p>
+
+<h2>Changes</h2>
+
+<p>
+AB MUSIC_ reserves the right to update or modify these terms at any time without
+prior notice.
+</p>
+
+<h2>Contact</h2>
+
+<p>
+For licensing requests, collaborations, or permission to use AB MUSIC_ content,
+please contact through the official social media pages listed on the website.
+</p>
+
+</div>
+
+<footer>
+
+© 2026 AB MUSIC_ — All Rights Reserved
+
+</footer>
+
+</body>
+</html>
