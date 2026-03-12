@@ -1,36 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>AB MUSIC_ | Official Website</title>
+<title>AB MUSIC_ | Music Blog</title>
 
 <style>
 
 body{
 margin:0;
 font-family:Arial;
-background:#0a0a0a;
-color:white;
+background:#f4f4f4;
 }
 
 header{
-background:black;
+background:#000;
+color:white;
 text-align:center;
-padding:40px;
-}
-
-header h1{
-font-size:44px;
-letter-spacing:4px;
+padding:30px;
 }
 
 nav{
 background:#111;
-padding:15px;
+padding:12px;
 text-align:center;
 }
 
@@ -38,67 +32,57 @@ nav a{
 color:white;
 margin:0 15px;
 text-decoration:none;
-font-weight:bold;
 }
 
-.hero{
-text-align:center;
-padding:50px;
-}
-
-.hero img{
-width:260px;
-border-radius:12px;
-}
-
-.section{
-max-width:1000px;
+.container{
+max-width:1100px;
 margin:auto;
-padding:40px 20px;
-}
-
-.music{
-background:#141414;
-padding:25px;
-margin-bottom:25px;
-border-radius:10px;
-}
-
-.gallery{
+padding:20px;
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-gap:15px;
+grid-template-columns:2fr 1fr;
+gap:25px;
 }
 
-.gallery img{
-width:100%;
-border-radius:8px;
-}
-
-.blog{
-background:#141414;
+.post{
+background:white;
 padding:20px;
 margin-bottom:20px;
-border-radius:10px;
+border-radius:8px;
+box-shadow:0 2px 6px rgba(0,0,0,0.1);
 }
 
-.social{
-text-align:center;
-background:black;
-padding:40px;
+.post img{
+width:100%;
+border-radius:6px;
 }
 
-.social a{
-margin:10px;
-font-size:20px;
-text-decoration:none;
-color:white;
+.sidebar{
+background:white;
+padding:20px;
+border-radius:8px;
+box-shadow:0 2px 6px rgba(0,0,0,0.1);
+}
+
+.music iframe{
+width:100%;
+margin-bottom:15px;
+}
+
+.search{
+margin-bottom:20px;
+}
+
+.search input{
+width:100%;
+padding:10px;
 }
 
 footer{
+background:#000;
+color:white;
 text-align:center;
-background:#111;
 padding:20px;
+margin-top:40px;
 }
 
 </style>
@@ -110,125 +94,143 @@ padding:20px;
 <header>
 
 <h1>AB MUSIC_</h1>
-<p>Artist • Studio • Music Movement</p>
+<p>Music • Studio • Blog</p>
 
 </header>
 
 <nav>
 
-<a href="#music">Music</a>
-<a href="#blog">Blog</a>
-<a href="#gallery">Gallery</a>
-<a href="#social">Social</a>
+<a href="#">Home</a>
+<a href="#">Blog</a>
+<a href="#">Music</a>
+<a href="#">Gallery</a>
 
 </nav>
 
-<section class="hero">
+<div class="container">
 
-<!-- REPLACE IMAGE WITH YOUR DROPBOX OR GITHUB LINK -->
+<div>
 
-<img src="https://via.placeholder.com/260">
+<div class="search">
 
-<p>Welcome to the official AB MUSIC_ music hub.  
-Stream music, follow updates, and explore the journey.</p>
-
-</section>
-
-<section class="section" id="music">
-
-<h2>Stream Music</h2>
-
-<div class="music">
-
-<h3>Spotify</h3>
-
-<iframe style="border-radius:12px"
-src="https://open.spotify.com/embed/track/000"
-width="100%" height="152"
-frameborder="0"
-allow="autoplay; clipboard-write; encrypted-media; fullscreen">
-</iframe>
+<input type="text" id="search" placeholder="Search posts...">
 
 </div>
 
-<div class="music">
-
-<h3>Audiomack</h3>
-
-<iframe src="https://audiomack.com/embed/song"
-scrolling="no"
-width="100%"
-height="252">
-</iframe>
+<div id="posts"></div>
 
 </div>
 
-<div class="music">
+<div class="sidebar">
 
-<h3>SoundCloud</h3>
-
-<iframe width="100%" height="166"
-scrolling="no"
-frameborder="no"
-src="https://w.soundcloud.com/player/?url=https://soundcloud.com">
-</iframe>
-
-</div>
-
-</section>
-
-<section class="section" id="blog">
-
-<h2>Artist Blog</h2>
-
-<div class="blog">
-<h3>New Music Release</h3>
-<p>AB MUSIC_ is preparing new releases and collaborations coming soon.</p>
-</div>
-
-<div class="blog">
-<h3>Studio Sessions</h3>
-<p>Creative work in progress at AB MUSIC_ Studio.</p>
-</div>
-
-</section>
-
-<section class="section" id="gallery">
-
-<h2>Artist Gallery</h2>
-
-<div class="gallery">
-
-<!-- REPLACE WITH YOUR DROPBOX OR GITHUB IMAGE LINKS -->
+<h3>Artist</h3>
 
 <img src="https://via.placeholder.com/300">
 
-<img src="https://via.placeholder.com/300">
+<p>
+AB MUSIC_ is an independent music artist creating original sounds and connecting with listeners worldwide.
+</p>
 
-<img src="https://via.placeholder.com/300">
+<h3>Stream Music</h3>
+
+<div class="music">
+
+<iframe height="152"
+src="https://open.spotify.com/embed/track/000"></iframe>
+
+<iframe height="252"
+src="https://audiomack.com/embed/song"></iframe>
+
+<iframe height="166"
+src="https://w.soundcloud.com/player/?url=https://soundcloud.com"></iframe>
 
 </div>
 
-</section>
+<h3>Visitors</h3>
 
-<section class="social" id="social">
+<p id="counter"></p>
 
-<h2>Follow AB MUSIC_</h2>
+</div>
 
-<a href="#">Instagram</a>
-<a href="#">TikTok</a>
-<a href="#">YouTube</a>
-<a href="#">Spotify</a>
-<a href="#">Audiomack</a>
-<a href="#">SoundCloud</a>
-
-</section>
+</div>
 
 <footer>
 
-© 2026 AB MUSIC_ — Official Website
+© 2026 AB MUSIC_
 
 </footer>
+
+<script>
+
+const blogPosts = [
+
+{
+title:"New Music Journey",
+image:"https://via.placeholder.com/900x400",
+content:"AB MUSIC_ is preparing powerful new music releases."
+},
+
+{
+title:"Studio Update",
+image:"https://via.placeholder.com/900x400",
+content:"Behind the scenes creating the next sound movement."
+},
+
+{
+title:"Global Vision",
+image:"https://via.placeholder.com/900x400",
+content:"The AB MUSIC_ movement connects listeners worldwide."
+}
+
+]
+
+function displayPosts(posts){
+
+const container=document.getElementById("posts")
+
+container.innerHTML=""
+
+posts.forEach(post=>{
+
+container.innerHTML+=`
+
+<div class="post">
+
+<img src="${post.image}">
+
+<h2>${post.title}</h2>
+
+<p>${post.content}</p>
+
+</div>
+
+`
+
+})
+
+}
+
+displayPosts(blogPosts)
+
+document.getElementById("search").addEventListener("keyup",function(){
+
+const value=this.value.toLowerCase()
+
+const filtered=blogPosts.filter(p=>p.title.toLowerCase().includes(value))
+
+displayPosts(filtered)
+
+})
+
+let count=localStorage.getItem("visits")
+
+count++
+
+localStorage.setItem("visits",count)
+
+document.getElementById("counter").innerText="Visitors: "+count
+
+</script>
 
 </body>
 </html>
