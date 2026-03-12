@@ -1,236 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>AB MUSIC_ | Music Blog</title>
+<title>AB MUSIC_ | Official Blog</title>
 
 <style>
 
 body{
+font-family: Arial, Helvetica, sans-serif;
 margin:0;
-font-family:Arial;
-background:#f4f4f4;
+background:#0f0f0f;
+color:white;
 }
 
 header{
 background:#000;
-color:white;
-text-align:center;
 padding:30px;
+text-align:center;
+}
+
+header h1{
+margin:0;
+font-size:40px;
+letter-spacing:3px;
 }
 
 nav{
-background:#111;
-padding:12px;
 text-align:center;
+background:#111;
+padding:10px;
 }
 
 nav a{
 color:white;
 margin:0 15px;
 text-decoration:none;
+font-weight:bold;
+}
+
+.hero{
+text-align:center;
+padding:40px;
+}
+
+.hero img{
+width:250px;
+border-radius:10px;
 }
 
 .container{
-max-width:1100px;
+max-width:900px;
 margin:auto;
 padding:20px;
-display:grid;
-grid-template-columns:2fr 1fr;
-gap:25px;
 }
 
-.post{
-background:white;
+.blog-post{
+background:#1a1a1a;
 padding:20px;
 margin-bottom:20px;
 border-radius:8px;
-box-shadow:0 2px 6px rgba(0,0,0,0.1);
 }
 
-.post img{
-width:100%;
-border-radius:6px;
+.blog-post h2{
+margin-top:0;
 }
 
-.sidebar{
-background:white;
-padding:20px;
-border-radius:8px;
-box-shadow:0 2px 6px rgba(0,0,0,0.1);
+.social{
+text-align:center;
+padding:30px;
+background:#000;
 }
 
-.music iframe{
-width:100%;
-margin-bottom:15px;
-}
-
-.search{
-margin-bottom:20px;
-}
-
-.search input{
-width:100%;
-padding:10px;
+.social a{
+margin:0 10px;
+color:white;
+font-size:20px;
+text-decoration:none;
 }
 
 footer{
-background:#000;
-color:white;
 text-align:center;
 padding:20px;
-margin-top:40px;
+background:#111;
+font-size:14px;
 }
 
 </style>
-
 </head>
 
 <body>
 
 <header>
-
 <h1>AB MUSIC_</h1>
-<p>Music • Studio • Blog</p>
-
+<p>Official Artist Blog</p>
 </header>
 
 <nav>
-
 <a href="#">Home</a>
-<a href="#">Blog</a>
-<a href="#">Music</a>
-<a href="#">Gallery</a>
-
+<a href="#blog">Blog</a>
+<a href="#social">Social Media</a>
 </nav>
 
-<div class="container">
+<section class="hero">
 
-<div>
+<!-- PICTURE PLACEHOLDER -->
+<!-- Replace this link with your Dropbox or GitHub image link -->
 
-<div class="search">
+<img src="https://via.placeholder.com/250" alt="AB MUSIC_">
 
-<input type="text" id="search" placeholder="Search posts...">
+<p>Welcome to the official AB MUSIC_ blog.  
+Follow the journey, new releases, studio sessions and music updates.</p>
 
-</div>
+</section>
 
-<div id="posts"></div>
+<div class="container" id="blog">
 
-</div>
-
-<div class="sidebar">
-
-<h3>Artist</h3>
-
-<img src="https://via.placeholder.com/300">
-
+<div class="blog-post">
+<h2>New Music Coming Soon 🎵</h2>
 <p>
-AB MUSIC_ is an independent music artist creating original sounds and connecting with listeners worldwide.
+AB MUSIC_ is working on new music and studio recordings.
+Stay connected for updates and releases coming soon.
 </p>
-
-<h3>Stream Music</h3>
-
-<div class="music">
-
-<iframe height="152"
-src="https://open.spotify.com/embed/track/000"></iframe>
-
-<iframe height="252"
-src="https://audiomack.com/embed/song"></iframe>
-
-<iframe height="166"
-src="https://w.soundcloud.com/player/?url=https://soundcloud.com"></iframe>
-
 </div>
 
-<h3>Visitors</h3>
-
-<p id="counter"></p>
-
+<div class="blog-post">
+<h2>Studio Update</h2>
+<p>
+Behind the scenes at AB MUSIC_ Studio.  
+New creative sessions and collaborations are in progress.
+</p>
 </div>
 
 </div>
+
+<section class="social" id="social">
+
+<h2>Follow AB MUSIC_</h2>
+
+<!-- EDIT THESE LINKS -->
+
+<a href="https://instagram.com">Instagram</a>
+<a href="https://tiktok.com">TikTok</a>
+<a href="https://youtube.com">YouTube</a>
+<a href="https://spotify.com">Spotify</a>
+
+</section>
 
 <footer>
-
-© 2026 AB MUSIC_
-
+© 2026 AB MUSIC_ | All Rights Reserved
 </footer>
-
-<script>
-
-const blogPosts = [
-
-{
-title:"New Music Journey",
-image:"https://via.placeholder.com/900x400",
-content:"AB MUSIC_ is preparing powerful new music releases."
-},
-
-{
-title:"Studio Update",
-image:"https://via.placeholder.com/900x400",
-content:"Behind the scenes creating the next sound movement."
-},
-
-{
-title:"Global Vision",
-image:"https://via.placeholder.com/900x400",
-content:"The AB MUSIC_ movement connects listeners worldwide."
-}
-
-]
-
-function displayPosts(posts){
-
-const container=document.getElementById("posts")
-
-container.innerHTML=""
-
-posts.forEach(post=>{
-
-container.innerHTML+=`
-
-<div class="post">
-
-<img src="${post.image}">
-
-<h2>${post.title}</h2>
-
-<p>${post.content}</p>
-
-</div>
-
-`
-
-})
-
-}
-
-displayPosts(blogPosts)
-
-document.getElementById("search").addEventListener("keyup",function(){
-
-const value=this.value.toLowerCase()
-
-const filtered=blogPosts.filter(p=>p.title.toLowerCase().includes(value))
-
-displayPosts(filtered)
-
-})
-
-let count=localStorage.getItem("visits")
-
-count++
-
-localStorage.setItem("visits",count)
-
-document.getElementById("counter").innerText="Visitors: "+count
-
-</script>
 
 </body>
 </html>
